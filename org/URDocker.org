@@ -1,0 +1,15 @@
+* Docker Simulations
+https://hub.docker.com/r/universalrobots/ursim_e-series
+
+** Install
+sudo systemctl status docker
+docker pull universalrobots/ursim_e-series
+docker run --rm -it universalrobots/ursim_e-series
+
+# VNC port: 5900
+# Web browser VNC port: 6080
+docker run --rm -it -p 5900:5900 -p 6080:6080 universalrobots/ursim_e-series
+
+
+UI access via VNC:
+http://localhost:6080/vnc.html?host=localhost&port=6080
